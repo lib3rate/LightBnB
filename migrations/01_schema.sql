@@ -1,7 +1,7 @@
--- DROP TABLE IF EXISTS users CASCADE;
--- DROP TABLE IF EXISTS properties CASCADE;
--- DROP TABLE IF EXISTS reservations CASCADE;
--- DROP TABLE IF EXISTS property_reviews CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS properties CASCADE;
+DROP TABLE IF EXISTS reservations CASCADE;
+DROP TABLE IF EXISTS property_reviews CASCADE;
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY NOT NULL,
@@ -45,3 +45,11 @@ CREATE TABLE property_reviews (
   rating SMALLINT NOT NULL DEFAULT 0,
   message TEXT
 );
+
+-- UPDATE pets
+-- SET owner_id='2'
+-- WHERE id = 3;
+
+-- UPDATE pets
+-- SET owner_id='3'
+-- WHERE id = 2;
