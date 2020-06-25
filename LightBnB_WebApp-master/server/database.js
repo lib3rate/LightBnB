@@ -75,7 +75,6 @@ const getAllReservations = function(guest_id, limit = 10) {
   LIMIT $2;
   `, [guest_id, limit])
   .then(res => res.rows);
-  // return getAllProperties(null, 2);
 }
 exports.getAllReservations = getAllReservations;
 
